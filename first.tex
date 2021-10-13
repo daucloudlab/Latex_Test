@@ -1,8 +1,9 @@
-\documentclass[14pt, a4paper]{article}
+\documentclass[14pt, a4paper]{book}
 
 \usepackage{cmap} % поиск в pdf
 \usepackage[T2A]{fontenc} % кодировка
 \usepackage[utf8]{inputenc} % кодировка исходного кода
+%\usepackage[kazakh]{babel}
 
 \author{Дәулет}
 \title{Latex тесттен өткізіп жатырмын}
@@ -10,5 +11,23 @@
 
 \begin{document}
     \maketitle
-    Сәлееем! Жұмыс істеп тұр!!!
+
+    \tableofcontents{}
+    \clearpage
+
+    \chapter{Кіріспе}
+    \section{Бірінші бөлім}
+    \textbf{Python программалау тілі} - бұл қәзіргі уақытта әлемде ең кең 
+    таралған программа тілі болып саналады. Бірінші бөлімде Python 
+    программа тіліне кіріспе бөлімі.
+
+    \begin{itemize}
+        \item Бірінші
+        \item Екінші
+        \item үшінші
+        \item төртінші
+    \end{itemize}
+    \section{Екінші бөлім}
+    Екінші бөлімде Python программалау тілінің синтаксисіне кіріспе
+    бөлім ретінде қарастырамыз.
 \end{document}

@@ -4,9 +4,11 @@
 \usepackage[T2A]{fontenc} % кодировка
 \usepackage[utf8]{inputenc} % кодировка исходного кода
 %\usepackage[kazakh]{babel}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \graphicspath{./images/}
 
+\renewcommand{\chaptername}{Бөлім} % Chapter-і өзгертеді екен
 \author{Дәулет}
 \title{Latex тесттен өткізіп жатырмын}
 \date{\today}
@@ -32,7 +34,12 @@
 
     \includegraphics[scale=0.6]{images/cv-1.png}
 
+    Сілтеме \ref{example}
     \section{Екінші бөлім}
     Екінші бөлімде Python программалау тілінің синтаксисіне кіріспе
     бөлім ретінде қарастырамыз.
+
+    \label{example}
+    for i in range(10):
+        print(i)
 \end{document}
